@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import ImgComponent from "./components/ImgComponent.jsx"
+import ButtonComponent from "./components/ButtonComponent.jsx"
+import "./App.css"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ButtonComponent label="Pippo Baudo" />
+      <ImgComponent src="https:/placecats.com/200/200" />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
